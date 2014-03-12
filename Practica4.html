@@ -1,0 +1,60 @@
+?>
+<html>
+<body>
+<?php
+
+$producto1=100;
+$producto2=200;
+$producto3=300;
+$producto4=400;
+$producto5=500;
+
+ $subtotal = $producto1+$producto2+$producto3+$producto4+$producto5;
+ $iva=$subtotal *.16;
+ $total=$subtotal+$iva;
+
+
+
+?>
+ <table frame="box" border="2"> 
+   <tr>
+      <th> Productos </th>
+      <th> Precio    </th>
+   </tr> 
+   <tr>
+       <td> Produto 1 </td>
+       <td> 100       </td>
+    </tr>
+    <tr>
+       <td> Produto 2 </td>
+       <td> 200       </td>
+    </tr>
+    <tr>
+       <td> Produto 3 </td>
+       <td>  300       </td>
+   </tr>
+   <tr>
+       <td> Produto 4 </td>
+       <td> 400       </td>
+	<tr>   
+       <td> Produto 5 </td>
+       <td> 500       </td>
+   </tr>
+   <tr>
+   <td> Subtotal      </td>
+   <td> <?php echo $subtotal = $producto1+$producto2+$producto3+$producto4+$producto5;?>
+   </tr>
+   <tr>
+   <td> I.V.A         </td>
+   <td> <?php echo $iva=$subtotal *.16;?> </td>
+   </tr>
+   <tr>
+   <td>Total          </td>
+   <td><?php echo $total=$subtotal+$iva;?>
+   </tr>
+  
+   </table>
+   
+   </body>
+   </html>
+   <?
